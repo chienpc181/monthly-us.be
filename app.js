@@ -78,7 +78,6 @@ app.get('/api/budgets', async (req, res) => {
         { $sort: { category : 1 } }
     ]).toArray();
     res.status(200).json(result);
-
 });
 
 app.get('/api/transactions', async (req, res) => {

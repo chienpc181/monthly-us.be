@@ -19,7 +19,6 @@ connectToDb((err) => {
     }
 })
 
-
 app.get('/api/budgets', async (req, res) => {
     const collection = db.collection('budgets');
     const period = parseInt(req.query.period);

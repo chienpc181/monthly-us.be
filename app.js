@@ -9,12 +9,13 @@ app.use(bodyParser.json());
 app.use(cors());
 let db;
 
-const port = process.env.PORT;
+// const port = process.env.PORT;
+const port = 3000;
 connectToDb((err) => {
     if (!err) {
         db = getDb();
-        app.listen(port, () => {
-            console.log('app listening on port ${port}');
+        app.listen(3000, () => {
+            console.log('app listening on port 3000');
         });
     }
 })
